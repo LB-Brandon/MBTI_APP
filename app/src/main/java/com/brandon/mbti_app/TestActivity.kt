@@ -24,6 +24,7 @@ class TestActivity : AppCompatActivity() {
         // In this context, "this" refers to the current activity(TextActivity)
         viewPager.adapter = ViewPagerAdapter(this)
         viewPager.isUserInputEnabled = false  // Disable user input for swipe navigation
+        viewPager.setPageTransformer(ZoomOutPageTransformer())
 
     }
 
